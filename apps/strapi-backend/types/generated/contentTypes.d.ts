@@ -537,6 +537,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
 export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
   collectionName: 'home_pages'
   info: {
+    description: ''
     displayName: 'Home Page'
     pluralName: 'home-pages'
     singularName: 'home-page'
@@ -545,6 +546,7 @@ export interface ApiHomePageHomePage extends Struct.SingleTypeSchema {
     draftAndPublish: true
   }
   attributes: {
+    blocks: Schema.Attribute.DynamicZone<['layout.hero-section']>
     createdAt: Schema.Attribute.DateTime
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private

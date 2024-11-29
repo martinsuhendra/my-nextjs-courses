@@ -7,7 +7,9 @@
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "run:strapi-fe": "cd apps/strapi-frontend && pnpm run dev",
+    "run:strapi-be": "cd apps/strapi-backend && pnpm develop"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
