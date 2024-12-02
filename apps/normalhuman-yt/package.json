@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "type-check": "tsc --noEmit",
-    "migrate-db": "pnpx prisma migrate dev"
+    "migrate-db": "pnpx prisma migrate dev",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.5.1",
