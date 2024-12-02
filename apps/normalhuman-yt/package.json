@@ -9,7 +9,7 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "migrate-db": "pnpx prisma migrate dev",
-    "postinstall": "prisma generate"
+    "postinstall": "pnpx prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^6.5.1",
